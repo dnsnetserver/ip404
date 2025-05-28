@@ -4,30 +4,92 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(to right, #5e60ce, #48bfe3);
   color: white;
-  min-height: 100vh;
 }
 
-.container {
+.site-header {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.split-layout {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 40px;
+  min-height: calc(100vh - 60px);
 }
 
-.form-section {
-  max-width: 500px;
+.left-panel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
   padding: 20px;
 }
 
-h1, h2 {
+.mockup {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  color: #222;
+}
+
+.mockup-header {
+  font-weight: bold;
   margin-bottom: 10px;
+  text-align: center;
+}
+
+.mockup-body {
+  text-align: center;
+}
+
+.mockup-icons span {
+  font-size: 24px;
+  margin: 5px;
+}
+
+.mockup-form input {
+  width: 90%;
+  padding: 8px;
+  margin: 8px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.mockup-form button {
+  width: 95%;
+  padding: 10px;
+  background: #4cc9f0;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.right-panel {
+  flex: 1;
+  padding: 40px;
+  min-width: 300px;
+}
+
+.subtext {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
 .category-row {
   display: flex;
-  justify-content: space-between;
-  margin: 20px 0;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
 .card {
@@ -35,9 +97,9 @@ h1, h2 {
   padding: 15px;
   border-radius: 10px;
   cursor: pointer;
-  transition: 0.3s;
   text-align: center;
-  width: 70px;
+  transition: 0.3s;
+  width: 80px;
 }
 
 .card:hover {
@@ -47,34 +109,21 @@ h1, h2 {
 form input {
   width: 100%;
   padding: 10px;
-  margin-top: 8px;
-  border-radius: 5px;
+  margin: 8px 0;
+  border-radius: 6px;
   border: none;
 }
 
-button {
+form button {
   padding: 12px;
   width: 100%;
   background: #4cc9f0;
   color: white;
   border: none;
   margin-top: 10px;
-  border-radius: 5px;
-  cursor: pointer;
+  border-radius: 6px;
 }
 
 .hidden {
   display: none;
-}
-
-.store-logos img {
-  height: 40px;
-  margin: 10px 10px 0 0;
-}
-
-.mockup-section img {
-  max-height: 500px;
-  width: auto;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
