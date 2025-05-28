@@ -4,15 +4,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Good Money - Get Free Insurance Quotes</title>
+  <title>TruQuotes - Compare Insurance Quotes</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <section class="container">
-    <div class="form-section">
-      <h1>Coming Soon</h1>
-      <p>Subscribe and get a free quote for Home, Auto, Life, or Health Insurance.</p>
-      <h2>Get A Free Quote</h2>
+  <header class="site-header">
+    <h1>TruQuotes</h1>
+  </header>
+  <div class="split-layout">
+    <div class="left-panel">
+      <div class="mockup">
+        <div class="mockup-screen">
+          <div class="mockup-header">TruQuotes App</div>
+          <div class="mockup-body">
+            <p>Select Insurance Type:</p>
+            <div class="mockup-icons">
+              <span>🏠</span>
+              <span>🚗</span>
+              <span>❤️</span>
+              <span>🏥</span>
+            </div>
+            <div class="mockup-form">
+              <input placeholder="Age" />
+              <input placeholder="Zip Code" />
+              <input placeholder="Occupation" />
+              <button>Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <p class="subtext">Compare quotes for Home, Auto, Life, and Health Insurance</p>
       <div class="category-row">
         <div class="card" onclick="selectCategory('home')">🏠<p>Home</p></div>
         <div class="card" onclick="selectCategory('auto')">🚗<p>Auto</p></div>
@@ -24,15 +48,8 @@
         <input type="email" placeholder="Your email" required />
         <button type="submit">Get Quote & Subscribe</button>
       </form>
-      <div class="store-logos">
-        <img src="playstore.png" alt="Google Play" />
-        <img src="appstore.png" alt="App Store" />
-      </div>
     </div>
-    <div class="mockup-section">
-      <img src="mobile-mockup.png" alt="Mobile App Mockup" />
-    </div>
-  </section>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
