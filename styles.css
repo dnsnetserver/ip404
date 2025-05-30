@@ -1,78 +1,129 @@
 
 body {
   margin: 0;
-  padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: url('./0065E2CA-5A54-4159-8A0E-4815BEB6DC67.jpeg');
-  background-size: cover;
-  color: #fff;
-}
-
-header {
-  padding: 20px;
-  font-size: 24px;
-  font-weight: bold;
+  background: linear-gradient(to right, #5e60ce, #48bfe3);
   color: white;
 }
 
-.container {
+.site-header {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.split-layout {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  min-height: calc(100vh - 60px);
+}
+
+.left-panel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 40px;
-  gap: 30px;
+  min-width: 300px;
+  padding: 20px;
 }
 
-.mockup-left img {
-  width: 250px;
-  height: auto;
+.mockup {
+  background-color: white;
   border-radius: 20px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  color: #222;
 }
 
-.form-section {
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 30px;
-  border-radius: 12px;
-  color: #000;
-  width: 400px;
+.mockup-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
-.cards {
+.mockup-body {
+  text-align: center;
+}
+
+.mockup-icons span {
+  font-size: 24px;
+  margin: 5px;
+}
+
+.mockup-form input {
+  width: 90%;
+  padding: 8px;
+  margin: 8px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.mockup-form button {
+  width: 95%;
+  padding: 10px;
+  background: #4cc9f0;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.right-panel {
+  flex: 1;
+  padding: 40px;
+  min-width: 300px;
+}
+
+.subtext {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.category-row {
   display: flex;
-  justify-content: space-between;
+  gap: 10px;
   margin-bottom: 20px;
 }
 
 .card {
-  padding: 12px 20px;
-  background-color: #ececec;
-  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  transition: 0.3s;
+  width: 80px;
 }
 
 .card:hover {
-  transform: scale(1.1);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
-.quote-form input {
+form input {
   width: 100%;
-  margin-bottom: 15px;
   padding: 10px;
-  font-size: 16px;
-  border: 1px solid #aaa;
+  margin: 8px 0;
   border-radius: 6px;
+  border: none;
 }
 
-.quote-form button {
-  width: 100%;
+form button {
   padding: 12px;
-  font-size: 16px;
-  background-color: #5c6bc0;
+  width: 100%;
+  background: #4cc9f0;
   color: white;
   border: none;
+  margin-top: 10px;
   border-radius: 6px;
-  cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }
