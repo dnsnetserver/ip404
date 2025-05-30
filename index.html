@@ -3,36 +3,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Good Money - Get Free Insurance Quotes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="styles.css" />
+  <title>TruQuotes</title>
 </head>
 <body>
-  <section class="container">
-    <div class="form-section">
-      <h1>Coming Soon</h1>
-      <p>Subscribe and get a free quote for Home, Auto, Life, or Health Insurance.</p>
-      <h2>Get A Free Quote</h2>
-      <div class="category-row">
-        <div class="card" onclick="selectCategory('home')">🏠<p>Home</p></div>
-        <div class="card" onclick="selectCategory('auto')">🚗<p>Auto</p></div>
-        <div class="card" onclick="selectCategory('life')">❤️<p>Life</p></div>
-        <div class="card" onclick="selectCategory('health')">🏥<p>Health</p></div>
-      </div>
-      <form id="quoteForm" class="hidden">
-        <div id="dynamicFields"></div>
-        <input type="email" placeholder="Your email" required />
-        <button type="submit">Get Quote & Subscribe</button>
-      </form>
-      <div class="store-logos">
-        <img src="playstore.png" alt="Google Play" />
-        <img src="appstore.png" alt="App Store" />
-      </div>
-    </div>
-    <div class="mockup-section">
+  <header>
+    <h1>TruQuotes</h1>
+  </header>
+
+  <main class="container">
+    <div class="mockup-left">
       <img src="mobile-mockup.png" alt="Mobile App Mockup" />
     </div>
-  </section>
-  <script src="script.js"></script>
+    
+    <div class="form-section">
+      <div class="cards">
+        <div class="card">Home</div>
+        <div class="card">Auto</div>
+        <div class="card">Life</div>
+        <div class="card">Health</div>
+      </div>
+
+      <form class="quote-form">
+        <input type="text" placeholder="Age" required />
+        <input type="text" placeholder="Zip Code" required />
+        <input type="text" placeholder="Occupation" required />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </main>
 </body>
 </html>
