@@ -2,45 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>TruQuotes - Compare Insurance Quotes</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <h1>TruQuotes</h1>
-  </header>
+  <nav class="navbar">
+    <div class="logo">TruQuotes</div>
+    <a href="#">Learn More</a>
+  </nav>
+
   <div class="split-layout">
     <div class="left-panel">
-      <div class="mockup">
-        <div class="mockup-screen">
-          <div class="mockup-header">TruQuotes App</div>
-          <div class="mockup-body">
-            <p>Select Insurance Type:</p>
-            <div class="mockup-icons">
-              <span>🏠</span>
-              <span>🚗</span>
-              <span>❤️</span>
-              <span>🏥</span>
-            </div>
-            <div class="mockup-form">
-              <input placeholder="Age" />
-              <input placeholder="Zip Code" />
-              <input placeholder="Occupation" />
-              <button>Submit</button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <img src="vector-insurance.svg" alt="Insurance vector" class="vector-image"/>
     </div>
 
     <div class="right-panel">
       <p class="subtext">Compare quotes for Home, Auto, Life, and Health Insurance</p>
       <div class="category-row">
-        <div class="card" onclick="selectCategory('home')">🏠<p>Home</p></div>
-        <div class="card" onclick="selectCategory('auto')">🚗<p>Auto</p></div>
-        <div class="card" onclick="selectCategory('life')">❤️<p>Life</p></div>
-        <div class="card" onclick="selectCategory('health')">🏥<p>Health</p></div>
+        <div class="card" onclick="selectCategory('home')">
+          <img src="icon-home.svg" alt="Home" />
+          <p>Home</p>
+        </div>
+        <div class="card" onclick="selectCategory('auto')">
+          <img src="icon-auto.svg" alt="Auto" />
+          <p>Auto</p>
+        </div>
+        <div class="card" onclick="selectCategory('life')">
+          <img src="icon-life.svg" alt="Life" />
+          <p>Life</p>
+        </div>
+        <div class="card" onclick="selectCategory('health')">
+          <img src="icon-health.svg" alt="Health" />
+          <p>Health</p>
+        </div>
       </div>
       <form id="quoteForm" class="hidden">
         <div id="dynamicFields"></div>
@@ -49,6 +44,7 @@
       </form>
     </div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
