@@ -53,20 +53,47 @@ body {
 }
 
 .left-panel {
-  flex: 1;
+  background-color: #f6f8fa;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  padding: 3rem;
 }
 
-.vector-image {
-  width: 90%;
-  max-width: 450px;
+.app-banner {
+  text-align: center;
+  max-width: 300px;
 }
 
+.app-banner h2 {
+  font-size: 1.6rem;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.app-banner p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1.2rem;
+}
+
+.store-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.store-buttons img {
+  width: 160px;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.store-buttons img:hover {
+  transform: scale(1.05);
+}
 .right-panel {
   flex: 1;
   background: #ffffffdd;
