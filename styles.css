@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to left, #d9f8c4, #6bc8f2); /* Tech + eco feel */
+  background: linear-gradient(to right, #6bc8f2, #d9f8c4); /* Tech + eco feel */
   color: #1a1a1a;
 }
 
