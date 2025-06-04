@@ -24,6 +24,31 @@ body {
   font-size: 1.6rem;
   color: white;
 }
+.wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.split-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.split-layout {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 60vh;
+}
 
 .split-layout {
   display: flex;
