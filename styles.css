@@ -58,7 +58,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  padding: 20px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
@@ -71,8 +71,8 @@ body {
 .right-panel {
   flex: 1;
   background: #ffffffdd;
-  padding: 50px;
-  min-width: 400px;
+  padding: 20px;
+  min-width: 500px;
   height:auto;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -135,12 +135,14 @@ form button:hover {
   background: #0ea5e9;
 }
 .footer-container {
-  width: auto; 
-  height: auto;
-  background-color: black;
+ position: relative; 
+  display: flex; 
+  
 } 
 .footer{
+  background-color: black;
   align-items:center;
+  justify-content: center;
   color: white 
 }
 
