@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -6,20 +6,20 @@
   <title>Compare Insurance Quotes</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body onload="initializeForm()">
+<body>
   <div class="wrapper">
-    <!-- Navigation -->
-    <div class="nav-wrapper">
-      <nav class="navbar">
-        <div class="logo">TrueQuote</div>
-        <a href="#">How it Works</a>
-      </nav>
-    </div>
 
-    <!-- Main Layout -->
+    <!-- Navigation -->
+   <div class="nav-wrapper">
+    <nav class="navbar">
+        <div class="logo">TrueQuote</div>
+        <a href="#">How it Works </a>
+    </nav>
+      </div>
+
+    <!-- Main Split Layout Container -->
     <div class="split-container">
       <div class="split-layout">
-        <!-- Left Panel -->
         <!-- Left Panel -->
     <div class="left-panel">
       <div class="app-banner">
@@ -35,51 +35,52 @@
         </div>
       </div>
     </div>
-        <!-- Right Panel -->
+
+        <!-- Right Panel with Form -->
         <div class="right-panel">
-          <p class="subtext">Compare quotes for Home, Auto, Life, and Health Insurance</p>
+  <p class="subtext">Compare quotes for Home, Auto, Life, and Health Insurance</p>
 
-          <!-- Carousel -->
-          <div class="carousel-container">
-            <div class="carousel-arrow left" onclick="scrollCarousel(-1)">&#10094;</div>
-            <div class="carousel-track" id="categoryCarousel">
-              <div class="carousel-card selected" onclick="selectCategory('home', this)">
-                <svg viewBox="0 0 24 24" fill="#3a86ff"><path d="M3 9.5L12 3L21 9.5V20C21 20.55 20.55 21 20 21H15C14.45 21 14 20.55 14 20V16C14 15.45 13.55 15 13 15H11C10.45 15 10 15.45 10 16V20C10 20.55 9.55 21 9 21H4C3.45 21 3 20.55 3 20V9.5Z"/></svg>
-                <p>Home</p>
-              </div>
-              <div class="carousel-card" onclick="selectCategory('auto', this)">
-                <svg viewBox="0 0 24 24" fill="#ffbe0b"><path d="M5 11L6.5 6.5C6.78 5.67 7.54 5 8.43 5H15.57C16.46 5 17.22 5.67 17.5 6.5L19 11H20C20.55 11 21 11.45 21 12V18C21 18.55 20.55 19 20 19H19C18.45 19 18 18.55 18 18V17H6V18C6 18.55 5.55 19 5 19H4C3.45 19 3 18.55 3 18V12C3 11.45 3.45 11 4 11H5ZM6.85 7L5.45 11H18.55L17.15 7H6.85Z"/></svg>
-                <p>Auto</p>
-              </div>
-              <div class="carousel-card" onclick="selectCategory('life', this)">
-                <svg viewBox="0 0 24 24" fill="#ff006e"><path d="M12 21.35L10.55 20.03C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5C22 12.28 18.6 15.36 13.45 20.04L12 21.35Z"/></svg>
-                <p>Life</p>
-              </div>
-              <div class="carousel-card" onclick="selectCategory('health', this)">
-                <svg viewBox="0 0 24 24" fill="#06d6a0"><path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM17 13H13V17H11V13H7V11H11V7H13V11H17V13Z"/></svg>
-                <p>Health</p>
-              </div>
-            </div>
-            <div class="carousel-arrow right" onclick="scrollCarousel(1)">&#10095;</div>
-          </div>
+  <div class="carousel-container">
+    <div class="carousel-arrow left" onclick="scrollCarousel(-1)">&#10094;</div>
 
-          <!-- Dynamic Form -->
-          <form id="quoteForm">
-            <div id="dynamicFields"></div>
-            <input type="email" placeholder="Your email" required />
-            <button type="submit">Get Quote & Subscribe</button>
-          </form>
-        </div>
+    <div class="carousel-track" id="categoryCarousel">
+      <div class="carousel-card" onclick="selectCategory('home')">
+        <svg viewBox="0 0 24 24" fill="#3a86ff"><path d="M3 9.5L12 3L21 9.5V20C21 20.55 20.55 21 20 21H15C14.45 21 14 20.55 14 20V16C14 15.45 13.55 15 13 15H11C10.45 15 10 15.45 10 16V20C10 20.55 9.55 21 9 21H4C3.45 21 3 20.55 3 20V9.5Z"/></svg>
+        <p>Home</p>
+      </div>
+      <div class="carousel-card" onclick="selectCategory('auto')">
+        <svg viewBox="0 0 24 24" fill="#ffbe0b"><path d="M5 11L6.5 6.5C6.78 5.67 7.54 5 8.43 5H15.57C16.46 5 17.22 5.67 17.5 6.5L19 11H20C20.55 11 21 11.45 21 12V18C21 18.55 20.55 19 20 19H19C18.45 19 18 18.55 18 18V17H6V18C6 18.55 5.55 19 5 19H4C3.45 19 3 18.55 3 18V12C3 11.45 3.45 11 4 11H5ZM6.85 7L5.45 11H18.55L17.15 7H6.85Z"/></svg>
+        <p>Auto</p>
+      </div>
+      <div class="carousel-card" onclick="selectCategory('life')">
+        <svg viewBox="0 0 24 24" fill="#ff006e"><path d="M12 21.35L10.55 20.03C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5C22 12.28 18.6 15.36 13.45 20.04L12 21.35Z"/></svg>
+        <p>Life</p>
+      </div>
+      <div class="carousel-card" onclick="selectCategory('health')">
+        <svg viewBox="0 0 24 24" fill="#06d6a0"><path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM17 13H13V17H11V13H7V11H11V7H13V11H17V13Z"/></svg>
+        <p>Health</p>
       </div>
     </div>
 
-    <!-- Footer -->
-    <div class="footer-container"> 
-      <footer class="footer">
-        <p>&copy; 2025 TrueQuote. Powered by WordPress. All rights reserved.</p>
-      </footer>
-    </div>
+    <div class="carousel-arrow right" onclick="scrollCarousel(1)">&#10095;</div>
   </div>
+
+  <form id="quoteForm" class="hidden">
+    <div id="dynamicFields"></div>
+    <input type="email" placeholder="Your email" required />
+    <button type="submit">Get Quote & Subscribe</button>
+  </form>
+</div>
+      </div>
+
+    <!-- WordPress-style Footer -->
+    <div class = footer-container> 
+    <footer class="footer">
+      <p>&copy; 2025 TrueQuote. Powered by WordPress. All rights reserved.</p>
+    </footer>
+    </div> 
+
+  </div> <!-- End of .wrapper -->
 
   <script src="script.js"></script>
 </body>
