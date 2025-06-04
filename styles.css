@@ -134,6 +134,15 @@ form button {
 form button:hover {
   background: #0ea5e9;
 }
+.footer-container {
+  width: auto; 
+  height: auto;
+  background-color: black;
+} 
+.footer{
+  align-items:center;
+  color: white 
+}
 
 .hidden {
   display: none;
