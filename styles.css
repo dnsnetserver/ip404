@@ -6,6 +6,7 @@ body {
 }
 
 .navbar {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,7 +49,7 @@ body {
   width: 75%;
   display: flex;
   flex-wrap: wrap;
-  min-height: calc(100vh - 70px);
+  
   
 }
 
@@ -57,7 +58,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  padding: 50px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
@@ -70,8 +71,9 @@ body {
 .right-panel {
   flex: 1;
   background: #ffffffdd;
-  padding: 40px;
-  min-width: 300px;
+  padding: 50px;
+  min-width: 400px;
+  height:auto;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
