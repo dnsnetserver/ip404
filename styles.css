@@ -135,14 +135,14 @@ form button:hover {
   background: #0ea5e9;
 }
 .footer-container {
- position: relative; 
-  display: flex; 
+   display: flex;
+  justify-content: center;
+  padding: 20px;
   
 } 
 .footer{
+  display:flex;
   background-color: black;
-  align-items:center;
-  justify-content: center;
   color: white 
 }
 
