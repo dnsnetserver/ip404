@@ -1,4 +1,53 @@
+function initializeForm() {
+  const firstCard = document.querySelector('.carousel-card');
+  firstCard.classList.add('selected');
+  selectCategory('home', firstCard);
+}
 
+function selectCategory(category, element) {
+  // Highlight selected card
+  document.querySelectorAll('.carousel-card').forEach(card => {
+    card.classList.remove('selected');
+  });
+  element.classList.add('selected');
+
+  const dynamicFields = document.getElementById("dynamicFields");
+  dynamicFields.innerHTML = '';
+
+  let placeholder = '';
+  switch (category) {
+    case 'home':
+      placeholder = 'Year built';
+      break;
+    case 'auto':
+      placeholder = 'Car make & model';
+      break;
+    case 'life':
+      placeholder = 'Your age';
+      break;
+    case 'health':
+      placeholder = 'Type of plan (e.g. PPO)';
+      break;
+  }
+
+  const input1 = document.createElement('input');
+  input1.type = 'text';
+  input1.placeholder = placeholder;
+  input1.required = true;
+
+  const input2 = document.createElement('input');
+  input2.type = 'text';
+  input2.placeholder = 'Zip code';
+  input2.required = true;
+
+  dynamicFields.appendChild(input1);
+  dynamicFields.appendChild(input2);
+}
+
+function scrollCarousel(direction) {
+  const container = document.getElementById('categoryCarousel');
+  container.scrollBy({ left: direction * 120, behavior: 'smooth' });
+}
 const form = document.getElementById('quoteForm');
 const dynamicFields = document.getElementById('dynamicFields');
 
