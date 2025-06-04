@@ -90,11 +90,14 @@ function selectCategory(category) {
   const dynamicFields = document.getElementById('dynamicFields');
   dynamicFields.innerHTML = ''; // Clear previous fields
 
+
+
+  
   const fields = {
-    home: ['Home Value', 'Address'],
-    auto: ['Car Make', 'Model', 'Year'],
-    life: ['Age', 'Smoking Status'],
-    health: ['Age', 'Pre-existing Conditions']
+    home: ['Year built', 'Zipcode'],
+    auto: ['Car Make & Model', 'Zipcode'],
+    life: ['Occupation', 'Zipcode'],
+    health: ['Age', 'Zipcode']
   };
 
   fields[category].forEach(label => {
