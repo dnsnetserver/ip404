@@ -53,7 +53,7 @@ body {
 }
 
 .left-panel {
-  background-color: #f6f8fa;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
