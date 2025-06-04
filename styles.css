@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: white;
+  background: linear-gradient(to right, #6bc8f2, #d9f8c4); /* Tech + eco feel */
   color: #1a1a1a;
 }
 
@@ -42,7 +42,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 20px;
-  background: linear-gradient(to right, #6bc8f2, #d9f8c4); /* Tech + eco feel */
+  
 }
 
 .split-layout {
