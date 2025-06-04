@@ -9,7 +9,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(0, 0, 0, 0.05);
+  background: black;
   padding: 20px;
   font-size: 1.2rem;
 }
@@ -41,20 +41,14 @@ body {
   display: flex;
   justify-content: center;
   padding: 20px;
-}
-
-.split-layout {
-  width: 75%;
-  display: flex;
-  flex-wrap: wrap;
-  min-height: 60vh;
+  background: linear-gradient(to right, #6bc8f2, #d9f8c4); /* Tech + eco feel */
 }
 
 .split-layout {
   display: flex;
   flex-wrap: wrap;
   min-height: calc(100vh - 70px);
-  background: linear-gradient(to right, #6bc8f2, #d9f8c4); /* Tech + eco feel */
+  
 }
 
 .left-panel {
