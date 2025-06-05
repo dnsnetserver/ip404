@@ -221,14 +221,24 @@ form button:hover {
   background: #0ea5e9;
 }
 .footer-container {
-   display: flex;
-  justify-content: center;
+  width: 100%;
   padding: 20px;
-  
-} 
-.footer{
-  display:flex;
-  color: white 
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.footer {
+  color: white;
+  text-align: center;
+  font-size: 0.95rem;
+  max-width: 100%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hidden {
@@ -244,4 +254,12 @@ form button:hover {
   .right-panel {
     width: 100%;
   }
+  /* Responsive text scaling (optional) */
+@media (max-width: 600px) {
+  .footer {
+    font-size: 0.85rem;
+    padding: 0 10px;
+  }
+
 }
+  
