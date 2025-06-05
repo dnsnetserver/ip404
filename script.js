@@ -1,3 +1,56 @@
+// Toggle dropdown
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.getElementById("languageToggle");
+  const menu = document.getElementById("languageMenu");
+
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+
+  // Close dropdown if clicked outside
+  window.addEventListener("click", (e) => {
+    if (!toggle.contains(e.target) && !menu.contains(e.target)) {
+      menu.classList.add("hidden");
+    }
+  });
+});
+
+// Language dictionary
+const translations = {
+  en: {
+    "header-title": "Get Instant Quotes Direct to your phone",
+    "header-desc": "Compare Home, Auto, Life & Health insurance on the go.",
+    "subtext": "Receive quotes for Home, Auto, Life, and Health Insurance",
+    "submit": "Get Quote & Subscribe"
+  },
+  es: {
+    "header-title": "Obtén cotizaciones instantáneas directamente en tu teléfono",
+    "header-desc": "Compara seguros de hogar, auto, vida y salud sobre la marcha.",
+    "subtext": "Recibe cotizaciones para seguros de hogar, auto, vida y salud",
+    "submit": "Obtener cotización y suscribirse"
+  },
+  fr: {
+    "header-title": "Obtenez des devis instantanés sur votre téléphone",
+    "header-desc": "Comparez les assurances habitation, auto, vie et santé en déplacement.",
+    "subtext": "Recevez des devis pour l’assurance habitation, auto, vie et santé",
+    "submit": "Obtenir un devis et s’abonner"
+  },
+  nl: {
+    "header-title": "Ontvang direct offertes op je telefoon",
+    "header-desc": "Vergelijk woon-, auto-, levens- en zorgverzekeringen onderweg.",
+    "subtext": "Ontvang offertes voor woning-, auto-, levens- en zorgverzekering",
+    "submit": "Ontvang offerte en abonneer"
+  }
+};
+
+function setLanguage(lang) {
+  const map = translations[lang];
+  for (const key in map) {
+    const el = document.querySelector(`[data-i18n="${key}"]`);
+    if (el) el.textContent = map[key];
+  }
+}
+
 function initializeForm() {
   const firstCard = document.querySelector('.carousel-card');
   firstCard.classList.add('selected');
