@@ -36,6 +36,54 @@ body {
   align-items: center;
   padding: 15px 20px;
 }
+.language-selector {
+  position: relative;
+  display: inline-block;
+}
+
+.globe-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: white;
+  padding: 5px 10px;
+  transition: transform 0.2s ease;
+}
+
+.globe-btn:hover {
+  transform: scale(1.1);
+}
+
+.language-menu {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
+  width: 150px;
+}
+
+.language-menu li {
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: #333;
+  transition: background 0.3s ease;
+}
+
+.language-menu li:hover {
+  background-color: #f0f0f0;
+}
+
+.language-menu.hidden {
+  display: none;
+}
 
 .split-container {
   display: flex;
