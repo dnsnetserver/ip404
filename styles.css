@@ -307,7 +307,7 @@ footer p{
 
   
  /* === MOBILE OPTIMIZATION (Android & iOS) === */
-@media only screen and (max-width: 568px) {
+@media only screen and (max-width: 400px) {
   /* Wrapper layout */
   .split-container {
     flex-direction: column;
