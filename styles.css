@@ -269,27 +269,22 @@ form button:hover {
   background: #0ea5e9;
 }
 .footer-container {
-  width: 100%;
-  padding: 20px;
-  background-color: #1a1a1a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
+  width: auto; 
+  display: flex; 
 }
 
 .footer {
-  color: white;
-  text-align: center;
-  font-size: 0.95rem;
-  max-width: 100%;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
+  display: flex; 
+  flex-direction: row;
   justify-content: center;
 }
+footer p{
+  text-align: center; 
+  font-size: 0.95rem;
+  
+}
 
-.hidden {
+.[hidden {
   display: none;
 }
   /* Responsive adjustment */
