@@ -96,8 +96,8 @@ function selectCategory(category) {
   const fields = {
     home: ['Year built', 'Zipcode'],
     auto: ['Car Make & Model', 'Zipcode'],
-    life: ['Occupation', 'Zipcode'],
-    health: ['Age', 'Zipcode']
+    life: ['Age', 'Zipcode'],
+    health: ['Occupation', 'Zipcode']
   };
 
   fields[category].forEach(label => {
